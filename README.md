@@ -2,18 +2,6 @@
 projet de mise en page d'une fiche de score à partir de données fournies
 # Processus de Développement - Composant de Résumé des Résultats
 
-## 📋 Table des matières
-
-- [Vue d'ensemble](#vue-densemble)
-- [Structure du projet](#structure-du-projet)
-- [Processus de développement](#processus-de-développement)
-- [Architecture HTML](#architecture-html)
-- [Implémentation CSS](#implémentation-css)
-- [Points clés de l'implementation](#points-clés-de-limplémentation)
-- [Défis et solutions](#défis-et-solutions)
-- [Apprentissages](#apprentissages)
-
----
 
 ## 🎯 Vue d'ensemble
 
