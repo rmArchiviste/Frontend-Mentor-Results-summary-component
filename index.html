@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Results summary component</title>
+
+
+</head>
+
+<body>
+  <main>
+    <div id="conteneur-mere">
+      <section id="Section1">
+        <h2 class="Score-result" id="Titre-Section1">Your Result</h2>
+
+        <span class="Score-result circle" aria-label="Your score"><span
+            style="font-size:50px; color: white; font-weight: 700;">76</span>
+
+          <span style="font-size: small; color:  hsl(224, 42%, 77%); font-weight: 700;">of 100</span>
+        </span>
+        <br>
+        <span class="Score-result" aria-label="Result description"
+          style="display: block; font-size:25px; color: white; font-weight: 700;">Great</span>
+        <p class="Score-result">You scored higher than 65% of <br>the people who have taken <br>these tests.</p>
+      </section>
+
+      <section id="Section2">
+        <h2 style="padding-left: 10%;">Summary</h2>
+        <ul aria-label="Summary of scores" class="summary-list">
+
+          <li id="reaction">
+            <div class="category-title">
+              <img src="https://res.cloudinary.com/doxow9jfk/image/upload/v1780218916/icon-reaction_fzpvus.svg" alt="">
+              <span>Reaction</span>
+            </div>
+            <span>80/100</span>
+          </li>
+
+          <li id="memory">
+            <div class="category-title">
+              <img src="https://res.cloudinary.com/doxow9jfk/image/upload/v1780223281/icon-memory_qgbzdz.svg" alt="">
+              <span>Memory</span>
+            </div>
+            <span>92/100</span>
+          </li>
+
+          <li id="verbal">
+            <div class="category-title">
+              <img src="https://res.cloudinary.com/doxow9jfk/image/upload/v1780223281/icon-verbal_zmqgu2.svg" alt="">
+              <span>Verbal</span>
+            </div>
+            <span>61/100</span>
+          </li>
+
+          <li id="visual">
+            <div class="category-title">
+              <img src="https://res.cloudinary.com/doxow9jfk/image/upload/v1780223281/icon-visual_ss0crz.svg" alt="">
+              <span>Visual</span>
+            </div>
+            <span>72/100</span>
+          </li>
+
+        </ul>
+        <button id="Continue">Continue</button>
+      </section>
+    </div>
+  </main>
+  <br>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/rmArchiviste">rmArchiviste</a>.
+  </footer>
+</body>
+
+</html>
