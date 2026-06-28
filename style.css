@@ -1,10 +1,10 @@
-@media (max-width: 480px) {
+@media (max-width: 480px) and (min-width: 360px) {
     #conteneur-mere {
         width: 92vw; 
         height: 100vh; 
         display: flex; 
         flex-direction: column;
-        background-color: transparent;  
+        
     }
     #Section1, #Section2 {
         width: 100%;
