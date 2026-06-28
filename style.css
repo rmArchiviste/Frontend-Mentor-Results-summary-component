@@ -122,15 +122,15 @@ p {
 @media (max-width: 480px) and (min-width: 360px) {
     #conteneur-mere {
         width: 92vw; 
-        height: 120vh;          /* Remplacé 100vh par auto pour que le conteneur s'adapte au contenu qui s'empile */
+        height: auto;          
         display: flex; 
         flex-direction: column;
         background-color: white;
-        margin: 20px auto;     /* Centre le bloc sur l'écran du téléphone */
+        margin: 20px auto;      
     }
     #Section1, #Section2 {
         width: 100%;
-        height: auto;          /* Permet aux sections de prendre la hauteur dont elles ont besoin */
+        height: auto;         
     }
     footer {
         margin-bottom: 0; 
