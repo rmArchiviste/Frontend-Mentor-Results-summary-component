@@ -3,8 +3,10 @@
         width: 92vw; 
         height: auto; 
         display: flex; 
-        flex-direction: column; 
+        flex-direction: column;
     }
+    #Section1, #Section2 {
+        width: 100%; 
 }
 body {
     background-color: rgb(197, 201, 202);
