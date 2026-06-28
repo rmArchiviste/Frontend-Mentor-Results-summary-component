@@ -122,7 +122,7 @@ p {
 @media (max-width: 480px) and (min-width: 360px) {
     #conteneur-mere {
         width: 92vw; 
-        height: auto;          /* Remplacé 100vh par auto pour que le conteneur s'adapte au contenu qui s'empile */
+        height: 100vh;          /* Remplacé 100vh par auto pour que le conteneur s'adapte au contenu qui s'empile */
         display: flex; 
         flex-direction: column;
         background-color: white;
@@ -130,7 +130,7 @@ p {
     }
     #Section1, #Section2 {
         width: 100%;
-        height: auto;          /* Permet aux sections de prendre la hauteur dont elles ont besoin */
+        height: 50%;          /* Permet aux sections de prendre la hauteur dont elles ont besoin */
     }
     footer {
         margin-bottom: 0; 
