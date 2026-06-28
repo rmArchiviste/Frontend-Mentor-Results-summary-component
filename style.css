@@ -131,12 +131,17 @@ p {
     }
     #Section1, #Section2 {
         width: 100%;
-        height: auto;  
-        border-radius: 7%; 
+        height: auto;
     }
     #Section2 {
         padding-bottom: 35px;
     }
+
+#Continue {
+        margin-right: auto; 
+        margin-left: auto; 
+
+}
     
     footer {
         margin-bottom: 0; 
