@@ -126,7 +126,8 @@ p {
         display: flex; 
         flex-direction: column;
         background-color: white;
-        margin: 20px auto;      
+        margin: 20px auto; 
+        border-radius: 7%; 
     }
     #Section1, #Section2 {
         width: 100%;
@@ -136,10 +137,7 @@ p {
     #Section2 {
         padding-bottom: 35px;
     }
-    #continue {
-        margin-left: auto; 
-        margin-right: auto; 
-    }
+    
     footer {
         margin-bottom: 0; 
     }
