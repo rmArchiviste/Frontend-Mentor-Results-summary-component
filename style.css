@@ -142,8 +142,8 @@ p {
 
     #Continue {
         display: block; 
-        margin-right: 10%; 
-        margin-left: 10%; 
+        margin-right: 15%; 
+        margin-left: auto; 
     }
     
     footer {
