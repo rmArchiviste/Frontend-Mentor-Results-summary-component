@@ -322,38 +322,6 @@ background: linear-gradient(...);
 margin: ...;
 padding: ...;
 ```
-## Intégration Responsive et Adaptabilité
-
-L'adaptation du composant aux différentes résolutions du marché repose sur l'exploitation des requêtes de médias (`@media`) combinées à la flexibilité native des conteneurs Flexbox. L'architecture a été mise en conformité avec les standards de l'industrie pour assurer une continuité visuelle et ergonomique sur l'ensemble des terminaux (écrans de bureau, tablettes et smartphones).
-
-### Évolutions de l'Architecture CSS
-
-#### 1. Point de rupture Tablettes (Largeur maximale : 768px)
-À partir de ce seuil, le positionnement global du composant est optimisé à l'aide de Flexbox sur le conteneur parent pour garantir un centrage rigoureux de l'interface, évitant ainsi le tassement des éléments textuels.
-- **Recentrage de la structure :** Exploitation de la propriété `min-height` associée à un alignement centré afin d'occuper de manière équilibrée l'espace vertical disponible.
-
-#### 2. Point de rupture Mobile (Largeur maximale : 480px)
-Le layout horizontal natif à deux colonnes conçu pour les ordinateurs n'étant plus adapté aux écrans étroits, une reconfiguration structurelle complète intervient à ce niveau.
-
-- **Bascule sémantique du Layout :** La propriété `flex-direction: column` est appliquée au conteneur principal (`#conteneur-mere`), transformant l'affichage horizontal en un empilement vertical fluide de la section des résultats (`#Section1`) et de celle du résumé (`#Section2`).
-- **Transition des unités de mesure :** Les dimensions fixes initialement définies en pixels (`width: 600px` et `height: 400px`) sont substituées par des valeurs relatives dynamiques (`width: 92%` et `height: auto`). Cette approche garantit une parfaite extensibilité du composant indexée sur le volume de contenu, supprimant ainsi tout risque de défilement horizontal (scrollbar) moche.
-- **Ajustement des bordures et arrondis :** Les propriétés de `border-radius` sont redéfinies spécifiquement pour la disposition verticale. L'arrondi de la première section s'applique uniquement aux angles supérieurs pour s'ajuster harmonieusement au cadre global de l'application.
-- **Ergonomie du bouton d'action :** L'élément de validation `#Continue` adopte une largeur relative augmentée à 80% afin d'offrir une zone de saisie tactile conforme aux directives d'ergonomie mobile.
-
-```css
-@media (max-width: 480px) {
-    #conteneur-mere {
-        flex-direction: column;
-        width: 92%;
-        height: auto;
-    }
-    #Section1, #Section2 {
-        width: 100%;
-        height: auto;
-    }
-}
----
-
 ## Défis et solutions
 
 ### Défi 1 : Centrer le score verticalement et horizontalement
