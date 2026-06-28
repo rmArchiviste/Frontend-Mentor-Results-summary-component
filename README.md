@@ -162,7 +162,19 @@ Chaque catégorie (Réaction, Mémoire, Verbal, Visuel) a reçu :
     font-weight: 700;
 }
 ```
+### Optimisation Responsive Moderne : L'Approche en Cascade
 
+Plutôt que de multiplier les lignes de code ou de recalculer chaque élément pour les écrans mobiles, l'adaptation repose sur une restructuration stratégique et minimaliste du conteneur principal. Une requête de média (`@media`) ciblée sur le standard mobile (480px) permet de basculer l'affichage en seulement quatre lignes de propriétés clés :
+
+```css
+@media (max-width: 480px) {
+    #conteneur-mere {
+        width: 92vw;            /* Adaptation fluide à la largeur de l'écran via les unités de viewport */
+        height: auto;           /* Suppression de la hauteur fixe pour permettre l'extensibilité du contenu */
+        display: flex;          
+        flex-direction: column; /* Bascule instantanée d'un flux horizontal à un empilement vertical */
+    }
+}
 **Propriétés :**
 - Arrondissement des angles pour un look moderne
 - Suppression de la bordure par défaut
