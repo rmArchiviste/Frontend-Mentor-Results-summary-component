@@ -127,7 +127,7 @@ p {
         flex-direction: column;
         background-color: white;
         margin: 20px auto; 
-        border-radius: 7%; 
+        border-radius: 20px; 
     }
     #Section1, #Section2 {
         width: 100%;
@@ -142,7 +142,7 @@ p {
 
     #Continue {
         display: block; 
-        margin-right: 15%; 
+        margin-right: auto; 
         margin-left: auto; 
     }
     
