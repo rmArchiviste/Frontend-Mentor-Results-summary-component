@@ -382,19 +382,24 @@ padding: ...;
         flex-direction: column;
         background-color: white;
         margin: 20px auto; 
-        border-radius: 7%; 
+        border-radius: 20px; 
     }
     #Section1, #Section2 {
         width: 100%;
         height: auto;
     }
+
+    #Section1 {
+       border-radius: 20px;  
+    }
     
     #Section2 {
         padding-bottom: 35px;
-        border-radius: <0; 
+        border-radius: 0; 
     }
 
     #Continue {
+        display: block; 
         margin-right: auto; 
         margin-left: auto; 
     }
