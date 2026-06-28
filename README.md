@@ -372,21 +372,38 @@ padding: ...;
 }
 ```
 
-### Défi 4 : Adaptation responsive (à venir)
-
-**Problème :** Layout 2 colonnes ne fonctionne qu'au desktop
-
-**Solution future :**
+### Défi 4 : Adaptation responsive 
 ```css
-@media (max-width: 768px) {
+@media (max-width: 480px) and (min-width: 360px) {
     #conteneur-mere {
+        width: 92vw; 
+        height: auto;          
+        display: flex; 
         flex-direction: column;
+        background-color: white;
+        margin: 20px auto; 
+        border-radius: 7%; 
+    }
+    #Section1, #Section2 {
         width: 100%;
         height: auto;
     }
+    
+    #Section2 {
+        padding-bottom: 35px;
+        border-radius: <0; 
+    }
+
+    #Continue {
+        margin-right: auto; 
+        margin-left: auto; 
+    }
+    
+    footer {
+        margin-bottom: 0; 
+    }
 }
 ```
-
 ---
 
 ## Apprentissages
